@@ -5,5 +5,10 @@ export default createMuiTheme({
         common: {
             darkGray: '#333333'
         }
+    },
+    typography: {
+        fontFamily: "Quicksand",
+        fontSize: 16
+        
     }
 });
