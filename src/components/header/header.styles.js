@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     headerContainer: {
         backgroundColor: theme.palette.common.darkGray,
-        height: '45px',
+        height: 50,
         justifyContent: 'center'
     },
     gridContainer: {
@@ -15,6 +15,10 @@ export default makeStyles((theme) => ({
         height: '25px'
     },
     labelText: {
-        textTransform: "none"
-    }
+        textTransform: "none",
+    },
+    appBarMargin: {
+        ...theme.mixins.toolbar,
+    },
+    
 }));
