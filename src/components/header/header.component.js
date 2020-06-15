@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 
 import useStyles from './header.styles';
-// import {useTheme} from '@material-ui/core/styles';
 import logo from '../../assets/images/jarLogo.png';
 
 
