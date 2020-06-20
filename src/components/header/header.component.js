@@ -9,7 +9,14 @@ import { Link } from 'react-router-dom';
 import useStyles from './header.styles';
 import logo from '../../assets/images/jarLogo.png';
 
-
+const menuOptions = [
+    { id: 0, icon: <img src={logo} alt="logo" style={{height: '25px'}}/>, title: null, route: '/' },
+    { id: 1, icon: null, title: 'Pulques', route: '/pulques' },
+    { id: 2, icon: null, title: 'Boutique', route: '/boutique' },
+    { id: 3, icon: null, title: 'Eventos', route: '/events' },
+    { id: 4, icon: null, title: 'Contacto', route: '/contact' },
+    { id: 5, icon: null, title: 'Blog', route: '/blog' },
+];
 
 export default function Header(){
 
@@ -26,15 +33,12 @@ export default function Header(){
         <React.Fragment>
             <AppBar className={classes.headerContainer}>
                 <Grid container direction='row' className={classes.gridContainer}>
-                    <Button className={classes.logoContainer} component={Link} to='/'>
-                        <img alt="company-logo" src={logo} className={classes.logo}/>
-                    </Button>
                     <Tabs value={tabIndex} onChange={changeTab} indicatorColor="primary">
-                        <Tab className={classes.labelText} label="Pulques" component={Link} to='/pulques'/>
-                        <Tab className={classes.labelText} label="Boutique" component={Link} to='/boutique'/>
-                        <Tab className={classes.labelText} label="Eventos" component={Link} to='/events'/>
-                        <Tab className={classes.labelText} label="Contacto" component={Link} to='/contact'/>
-                        <Tab className={classes.labelText} label="Blog" component={Link} to='/blog'/>
+                    {
+                        menuOptions.map(option => (
+                            <Tab className={classes.labelText} icon={option.icon} key={option.id} label={option.title} component={Link} to={option.route}/>
+                        ))
+                    }
                     </Tabs>
                 </Grid>
             </AppBar>

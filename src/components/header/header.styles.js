@@ -3,6 +3,7 @@ export default makeStyles((theme) => ({
     headerContainer: {
         backgroundColor: theme.palette.common.darkGray,
         height: 50,
+        width: '100%',
         justifyContent: 'center'
     },
     gridContainer: {

@@ -1,10 +1,21 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+
+//Images
+import doge from '../../assets/images/doge.png';
+
+//Styles
+import useStyles from './boutique.styles';
 
 export default function Boutique(){
 
 
     return(
-        <div>This is the Boutique page</div>
+        <Grid container direction='column' alignItems="center">
+           <img src={doge} alt="muscle-doge" width="1000px"/>
+           <Typography style={{fontSize: "3em"}}>The boutique's page is under construction</Typography>
+        </Grid>
     )
 
 }
