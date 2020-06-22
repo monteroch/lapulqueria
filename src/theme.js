@@ -11,7 +11,7 @@ export default createMuiTheme({
     },
     typography: {
         fontFamily: "Quicksand",
-        fontSize: 16
+        fontSize: 16,
         
     },
     mixins: {
