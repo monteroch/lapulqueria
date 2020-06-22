@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "40d2ad9ea6444f9146df59bf0c0efc6f",
+    "revision": "51881362bc8b47c05bccaabd67b42876",
     "url": "/lapulqueria/index.html"
   },
   {
-    "revision": "141c9135480f7b5c5711",
+    "revision": "7269123f0e5ffa49e74d",
     "url": "/lapulqueria/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "0df72f56ce719154e8dc",
-    "url": "/lapulqueria/static/js/2.68fff086.chunk.js"
+    "revision": "8a07bbcd6cff5852b689",
+    "url": "/lapulqueria/static/js/2.1ac4fa4c.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/lapulqueria/static/js/2.68fff086.chunk.js.LICENSE.txt"
+    "url": "/lapulqueria/static/js/2.1ac4fa4c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "141c9135480f7b5c5711",
-    "url": "/lapulqueria/static/js/main.d332a28e.chunk.js"
+    "revision": "7269123f0e5ffa49e74d",
+    "url": "/lapulqueria/static/js/main.e7ee0d24.chunk.js"
   },
   {
     "revision": "52582773c957a51184f9",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c4ef1f0e6c874c5b7cf7ff7b42c63ef0",
     "url": "/lapulqueria/static/media/pulqueTwoJars.c4ef1f0e.jpg"
+  },
+  {
+    "revision": "274d5a0c3aada98757df17ae2e373e47",
+    "url": "/lapulqueria/static/media/pulque_history_1.274d5a0c.jpg"
   },
   {
     "revision": "30eb25ab24976e316a869356106519d6",

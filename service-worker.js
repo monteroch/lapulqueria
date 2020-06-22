@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lapulqueria/precache-manifest.8e3e6a8479b5dee525701367bde1cfba.js"
+  "/lapulqueria/precache-manifest.aa6190fad24b47037bcf1bd7d43fdf14.js"
 );
 
 self.addEventListener('message', (event) => {
