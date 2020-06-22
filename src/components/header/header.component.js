@@ -15,19 +15,25 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import HomeIcon from '@material-ui/icons/Home';
+import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
+import CommentIcon from '@material-ui/icons/Comment';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
+import StorefrontIcon from '@material-ui/icons/Storefront';
 
 import useStyles from './header.styles';
 import logo from '../../assets/images/jarLogo.png';
 
 const menuOptions = [
-    { id: 0, icon: <img src={logo} alt="logo" style={{height: '25px'}}/>, title: null, route: '/' },
-    { id: 1, icon: null, title: 'Pulques', route: '/pulques' },
-    { id: 2, icon: null, title: 'Boutique', route: '/boutique' },
-    { id: 3, icon: null, title: 'Eventos', route: '/events' },
-    { id: 4, icon: null, title: 'Contacto', route: '/contact' },
-    { id: 5, icon: null, title: 'Blog', route: '/blog' },
+    { id: 0, icon: <img src={logo} alt="logo" style={{height: '25px'}}/>, title:null, drawerIcon:<HomeIcon style={{color: '#ffffff'}}/>, route: '/' },
+    { id: 1, icon: null, title: 'Pulques', drawerIcon:<FreeBreakfastIcon style={{color: '#ffffff'}}/>, route: '/pulques' },
+    { id: 2, icon: null, title: 'Boutique', drawerIcon:<StorefrontIcon style={{color: '#ffffff'}}/>, route: '/boutique' },
+    { id: 3, icon: null, title: 'Eventos', drawerIcon:<DateRangeIcon style={{color: '#ffffff'}}/>, route: '/events' },
+    { id: 4, icon: null, title: 'Contacto', drawerIcon:<CommentIcon style={{color: '#ffffff'}}/>, route: '/contact' },
+    { id: 5, icon: null, title: 'Blog', drawerIcon:<ImportContactsIcon style={{color: '#ffffff'}}/>, route: '/blog' },
 ];
 
 export default function Header(){
@@ -66,27 +72,29 @@ export default function Header(){
                     onClick={() => setOpen(true)}
                     edge="start"
                 >
-                    <MenuIcon/>
+                    <MenuIcon className={classes.icon}/>
                 </IconButton>
-                <Typography variant="h6" noWrap>
+                <Typography variant="h6" noWrap className={classes.companyName}>
                     La Pulquería
                 </Typography>
             </Toolbar>
             <Drawer
                 anchor="left"
                 open={open}
+                classes={{paper: classes.drawer}}
             >
                 <div className={classes.drawerHeader}>
                     <IconButton onClick={ () => setOpen(false)}>
-                    {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                    <ChevronLeftIcon className={classes.icon} />
                     </IconButton>
                 </div>
                 <Divider />
                 <List>
                     {
                         menuOptions.map(option => (
-                            <ListItem button key={option.id}>
-                                <ListItemText primary={option.title}/>
+                            <ListItem button key={option.id} component={Link} to={option.route}>
+                                <ListItemIcon>{option.drawerIcon}</ListItemIcon>
+                                <ListItemText primary={option.title ? option.title : 'Home'}/>
                             </ListItem>
                         ))
                     }

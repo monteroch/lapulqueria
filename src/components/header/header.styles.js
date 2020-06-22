@@ -21,5 +21,15 @@ export default makeStyles((theme) => ({
     appBarMargin: {
         ...theme.mixins.toolbar,
     },
-    
+    companyName: {
+        fontFamily: 'Lobster'
+    },
+    drawer: {
+        width: "15em",
+        backgroundColor: theme.palette.common.darkGray,
+        color: '#ffffff'
+    },
+    icon: {
+        color: '#ffffff'
+    }
 }));

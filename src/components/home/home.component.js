@@ -16,7 +16,7 @@ export default function Home(){
             {/* Welcome Section */}
             <Grid container item className={classes.welcomeContainer} justify="center" alignItems="center">
                 <Grid item>
-                    <img src={pulqueriaLogo} alt="pulqueria-logo" width="600em"/>
+                    <img src={pulqueriaLogo} alt="pulqueria-logo" className={classes.pulqueriaLogo}/>
                 </Grid>
             </Grid>
             {/* Next Section */}

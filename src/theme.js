@@ -6,7 +6,7 @@ export default createMuiTheme({
             main: "#333333"
         },
         common: {
-            darkGray: "#333333"
+            darkGray: "#333333",
         }
     },
     typography: {

@@ -10,11 +10,12 @@ import useStyles from './events.styles';
 
 export default function Events(){
 
+    const classes = useStyles();
 
     return(
         <Grid container direction='column' alignItems="center">
-           <img src={doge} alt="muscle-doge" width="1000px"/>
-           <Typography style={{fontSize: "3em"}}>The event's page is under construction</Typography>
+            <img src={doge} alt="muscle-doge" className={classes.underConstruction}/>
+           <Typography className={classes.underConstructionText}>The event's page is under construction</Typography>
         </Grid>
     )
 
