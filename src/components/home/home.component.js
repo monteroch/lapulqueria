@@ -22,7 +22,7 @@ export default function Home(){
             {/* Greetings Section */}
             <Grid container item className={classes.greetings} direction="column" alignItems="center">
                 <Grid item>
-                    <Typography className={classes.greetingsTitle}>Bienvenido</Typography>
+                    <Typography className={classes.greetingsTitle}>Bienvenido!</Typography>
                 </Grid>
                 <Grid item>
                     <Typography className={classes.greetingsBody}>
