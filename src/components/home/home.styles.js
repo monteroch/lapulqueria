@@ -51,47 +51,6 @@ export default makeStyles((theme) => ({
             fontSize: "1.30em",
         }
     },
-    history:{
-        backgroundColor: '#264653',
-        minHeight: "40em"
-    },
-    historyImage: {
-        backgroundImage: `url(${pulquehistory1})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: "40em",
-
-        [theme.breakpoints.down("sm")]:{
-            height: "30em"
-        }
-
-    },
-    historyContent: {
-        padding: "5em",
-
-        [theme.breakpoints.down("sm")]:{
-            padding: "2.5em",
-        }
-    },
-    historyTitle:{
-        color: '#ffffff',
-        fontSize: "2.75em",
-
-        [theme.breakpoints.down("sm")]:{
-            fontSize: "2.25em",
-        }
-    },
-    historyText:{
-        color: '#ffffff',
-        marginTop: "1em",
-        fontSize: "1.75em",
-        textAlign: 'justify',
-
-        [theme.breakpoints.down("sm")]:{
-            fontSize: "1.30em",
-        }
-    },
     pulqueriaLogo: {
         width: '40em',
         [theme.breakpoints.down("sm")]:{

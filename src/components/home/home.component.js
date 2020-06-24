@@ -2,9 +2,19 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
+//Styles
 import useStyles from './home.styles';
 
+//images
 import pulqueriaLogo from '../../assets/images/pulqueria_logo.png';
+import pulquehistory1 from '../../assets/images/pulque_history_1.jpg';
+import seasonpulque from '../../assets/images/season_pulque.jpg';
+import founder from '../../assets/images/founder.jpeg';
+import ourpulques from '../../assets/images/ourpulques.jpg';
+import events from '../../assets/images/events.jpg';
+
+//Components
+import Section from '../section/section.component';
 
 
 export default function Home(){
@@ -31,16 +41,26 @@ export default function Home(){
                 </Grid>
             </Grid>
             {/* Our History */}
-            <Grid container item className={classes.history} direction='row' justify="space-around">
-                <Grid item className={classes.historyImage} xl={6} md={12} xs={12}>                    
-                </Grid>
-                <Grid item container xl={6} md={12} xs={12} className={classes.historyContent} justify="center" alignItems="center">
-                    <Typography className={classes.historyTitle}>Nuestra Historia</Typography>
-                    <Typography className={classes.historyText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </Typography>
-                </Grid>
-            </Grid>
+            <Section title="Nuestra Historia" image={pulquehistory1} backgroundColor="#264653" imgPosition="left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Section>
+            {/* Our Pulques */}
+            <Section title="Nuestros Pulques" image={ourpulques} backgroundColor="#2a9d8f" imgPosition="right">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Section>
+            {/* Our Founder */}
+            <Section title="Nuestro Fundador" image={founder} backgroundColor="#e9c46a" imgPosition="left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Section>
+            {/* The season */}
+            <Section title="Pulques de temporada" image={seasonpulque} backgroundColor="#f4a261" imgPosition="right">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Section>
+            {/* Events */}
+            <Section title="Eventos" image={events} backgroundColor="#e76f51" imgPosition="left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Section>
+            
         </Grid>
     )
 
