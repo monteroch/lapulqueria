@@ -45,4 +45,11 @@ export default makeStyles((theme) => ({
             fontSize: "1.30em",
         }
     },
+    customButton: {
+        color: '#fff',
+        borderColor: '#fff',
+        "&:hover": {
+            backgroundColor: "rgba(255, 255, 255, 0.1)"
+        }
+    }
 }));

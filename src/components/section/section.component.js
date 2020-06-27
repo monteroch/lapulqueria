@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { useTheme } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 import useStyles from './section.styles';
 
@@ -29,6 +30,9 @@ export default function Section({backgroundColor, image, title, children, imgPos
                 <Typography className={classes.sectionText}>
                     {children}
                 </Typography>
+                <Button variant="outlined" className={classes.customButton} disableRipple>
+                    Learn More
+                </Button>
             </Grid>
         </Grid>
     )
