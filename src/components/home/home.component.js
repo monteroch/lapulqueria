@@ -15,6 +15,7 @@ import events from '../../assets/images/events.jpg';
 
 //Components
 import Section from '../section/section.component';
+import BlockImage from '../blockImage/blockImage.component';
 
 
 export default function Home(){
@@ -41,26 +42,9 @@ export default function Home(){
                 </Grid>
             </Grid>
             {/* Our History */}
-            <Section title="Nuestra Historia" image={pulquehistory1} backgroundColor="#264653" imgPosition="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Section>
-            {/* Our Pulques */}
-            <Section title="Nuestros Pulques" image={ourpulques} backgroundColor="#2a9d8f" imgPosition="right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Section>
-            {/* Our Founder */}
-            <Section title="Nuestro Fundador" image={founder} backgroundColor="#e9c46a" imgPosition="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Section>
-            {/* The season */}
-            <Section title="Pulques de temporada" image={seasonpulque} backgroundColor="#f4a261" imgPosition="right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Section>
-            {/* Events */}
-            <Section title="Eventos" image={events} backgroundColor="#e76f51" imgPosition="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Section>
-            
+            <BlockImage title="Food From The Ground Up">
+                Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
+            </BlockImage>
         </Grid>
     )
 
