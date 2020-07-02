@@ -7,7 +7,7 @@ import useStyles from './home.styles';
 
 //images
 import pulqueriaLogo from '../../assets/images/pulqueria_logo.png';
-import pulquehistory1 from '../../assets/images/pulque_history_1.jpg';
+import pulquedonkey from '../../assets/images/pulquedonkey.png';
 import seasonpulque from '../../assets/images/season_pulque.jpg';
 import founder from '../../assets/images/founder.jpeg';
 import ourpulques from '../../assets/images/ourpulques.jpg';
@@ -42,7 +42,7 @@ export default function Home(){
                 </Grid>
             </Grid>
             {/* Our History */}
-            <BlockImage title="Food From The Ground Up">
+            <BlockImage title="Food From The Ground Up" image={pulquedonkey} imgPosition="start">
                 Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
             </BlockImage>
         </Grid>
