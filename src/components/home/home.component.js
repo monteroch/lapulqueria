@@ -8,10 +8,11 @@ import useStyles from './home.styles';
 //images
 import pulqueriaLogo from '../../assets/images/pulqueria_logo.png';
 import pulquedonkey from '../../assets/images/pulquedonkey.png';
-import seasonpulque from '../../assets/images/season_pulque.jpg';
-import founder from '../../assets/images/founder.jpeg';
 import ourpulques from '../../assets/images/ourpulques.jpg';
-import events from '../../assets/images/events.jpg';
+import craftbeer from '../../assets/images/craftbeer.jpg'
+// import seasonpulque from '../../assets/images/season_pulque.jpg';
+// import founder from '../../assets/images/founder.jpeg';
+// import events from '../../assets/images/events.jpg';
 
 //Components
 import Section from '../section/section.component';
@@ -42,8 +43,14 @@ export default function Home(){
                 </Grid>
             </Grid>
             {/* Our History */}
-            <BlockImage title="Food From The Ground Up" image={pulquedonkey} imgPosition="start">
+            <BlockImage title="Our Story" image={pulquedonkey} imgPosition="end">
                 Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
+            </BlockImage>
+            <BlockImage title="Our Pulques" image={ourpulques} imgPosition="start">
+                Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
+            </BlockImage>
+            <BlockImage title="Something For Everyone" image={craftbeer} imgPosition="end">
+                After moving the business online, Casa Giorgio began providing some local options such as sandwiches, fries and chicken nuggets. Our aim is to be all-inclusive, and offer something for all taste-buds. So, if you are not a huge lover of pizza, you can still grab a bite to eat from Casa Giorgio.
             </BlockImage>
         </Grid>
     )

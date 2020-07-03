@@ -2,6 +2,7 @@ import { makeStyles, usetTheme } from '@material-ui/core/styles';
 
 import pulquedonkey from '../../assets/images/pulquedonkey.png';
 
+
 export default makeStyles(theme => ({
   imgContainer: {
     marginTop: "5em",
@@ -20,7 +21,8 @@ export default makeStyles(theme => ({
     },
     [theme.breakpoints.down("xs")]:{
       marginTop: 0,
-      height: '20em'
+      height: '20em',
+      marginBottom: '10em'
     },
   },
 
@@ -116,7 +118,7 @@ export default makeStyles(theme => ({
       padding: "1.5em",
       width: "80%",
       marginTop: "12em",
-      marginLeft: "1em"
+      marginLeft: "1em",
     },
   },
 
