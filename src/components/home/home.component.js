@@ -44,7 +44,7 @@ export default function Home(){
             </Grid>
             {/* Our History */}
             <BlockImage title="Our Story" image={pulquedonkey} imgPosition="end">
-                Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
+            However, it seemed that Countrywide was mostly interested in delivering commissions and profits to the company by financing high-risk mortgages to unqualified borrowers. When the housing market collapsed, borrowers defaulted on their high-interest loans and the company fell apart. Countrywide faced a flood of lawsuits charging it had used deceptive practices to entice people into loans they could not afford. Mozilo.
             </BlockImage>
             <BlockImage title="Our Pulques" image={ourpulques} imgPosition="start">
                 Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
