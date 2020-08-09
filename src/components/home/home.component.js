@@ -12,7 +12,7 @@ import ourpulques from '../../assets/images/ourpulques.jpg';
 import craftbeer from '../../assets/images/craftbeer.jpg'
 
 //Components
-import Section from '../section/section.component';
+// import Section from '../section/section.component';
 import BlockImage from '../blockImage/blockImage.component';
 
 
