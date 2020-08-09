@@ -10,9 +10,6 @@ import pulqueriaLogo from '../../assets/images/pulqueria_logo.png';
 import pulquedonkey from '../../assets/images/pulquedonkey.png';
 import ourpulques from '../../assets/images/ourpulques.jpg';
 import craftbeer from '../../assets/images/craftbeer.jpg'
-// import seasonpulque from '../../assets/images/season_pulque.jpg';
-// import founder from '../../assets/images/founder.jpeg';
-// import events from '../../assets/images/events.jpg';
 
 //Components
 import Section from '../section/section.component';
