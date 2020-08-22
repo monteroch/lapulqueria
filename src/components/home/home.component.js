@@ -48,6 +48,9 @@ export default function Home(){
             <BlockImage title="Something For Everyone" image={craftbeer} imgPosition="end">
                 After moving the business online, Casa Giorgio began providing some local options such as sandwiches, fries and chicken nuggets. Our aim is to be all-inclusive, and offer something for all taste-buds. So, if you are not a huge lover of pizza, you can still grab a bite to eat from Casa Giorgio.
             </BlockImage>
+            <BlockImage title="Our Pulques" image={ourpulques} imgPosition="start">
+                Cells are the building blocks of life. All the meat we eat grows from animal cells, and our approach is no different: We produce food by sourcing high-quality cells from animals. Then we cultivate the cells into meat by feeding them their favorite nutrients. We call this process ‘Essential Nutrition’, because we feed the cells exactly what they need to thrive while eliminating any unnecessary steps along the way.
+            </BlockImage>
         </Grid>
     )
 
