@@ -1,6 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { Event } from '../event/event.component';
+import { EventsList } from '../../temp/events';
+
 
 //Images
 import doge from '../../assets/images/doge.png';
@@ -16,6 +19,11 @@ export default function Events(){
         <Grid container direction='column' alignItems="center">
             <img src={doge} alt="muscle-doge" className={classes.underConstruction}/>
            <Typography className={classes.underConstructionText}>The event's page is under construction</Typography>
+           {
+               EventsList.map(event => (
+                   <Event/>
+               ))
+           }
         </Grid>
     )
 
