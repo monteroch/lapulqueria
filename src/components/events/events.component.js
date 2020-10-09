@@ -17,11 +17,9 @@ export default function Events(){
 
     return(
         <Grid container direction='column' alignItems="center">
-            <img src={doge} alt="muscle-doge" className={classes.underConstruction}/>
-           <Typography className={classes.underConstructionText}>The event's page is under construction</Typography>
            {
                EventsList.map(event => (
-                   <Event/>
+                   <Event event={event}/>
                ))
            }
         </Grid>
