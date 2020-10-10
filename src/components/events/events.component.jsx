@@ -16,7 +16,7 @@ export default function Events(){
     const classes = useStyles();
 
     return(
-        <Grid container direction='column' alignItems="center">
+        <Grid container direction='row' alignItems="center" className={classes.eventsContainer}>
            {
                EventsList.map(event => (
                    <Event event={event}/>

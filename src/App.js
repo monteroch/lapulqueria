@@ -8,19 +8,21 @@ import theme from './theme';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Header/>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/pulques" component={Pulques}/>
-          <Route exact path="/boutique" component={Boutique}/>
-          <Route exact path="/events" component={Events}/>
-          <Route exact path="/contact" component={Contact}/>
-          <Route exact path="/blog" component={Blog}/>
-        </Switch>
-      </BrowserRouter>
-    </ThemeProvider>
+    <div style={{height: "100vh"}}>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Header/>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/pulques" component={Pulques}/>
+            <Route exact path="/boutique" component={Boutique}/>
+            <Route exact path="/events" component={Events}/>
+            <Route exact path="/contact" component={Contact}/>
+            <Route exact path="/blog" component={Blog}/>
+          </Switch>
+        </BrowserRouter>
+      </ThemeProvider>
+    </div>
   );
 }
 

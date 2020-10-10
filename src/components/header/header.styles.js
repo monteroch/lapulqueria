@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     headerContainer: {
         backgroundColor: theme.palette.common.darkGray,
-        height: 50,
+        height: "50px",
         width: '100%',
         justifyContent: 'center'
     },

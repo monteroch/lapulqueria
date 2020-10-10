@@ -1,21 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
-    underConstruction: {
-        width:"50em",
-        
-        [theme.breakpoints.down("sm")]:{
-            width:"35em"
-        },
-        [theme.breakpoints.down("xs")]:{
-            width:"22em"
-        }
-    },
-    underConstructionText: {
-        fontSize: "3em",
-        textAlign: 'center',
-
-        [theme.breakpoints.down("sm")]:{
-            fontSize: "2em"
-        },
+    eventsContainer: {
+        backgroundColor: "#f8f8ff",
+        borderColor: "#6082b6",
+        border: "5px solid",
+        height: "100%",
+        boxSizing: "border-box",
+        padding: "5%"
     }
 }));
