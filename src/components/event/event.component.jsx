@@ -12,9 +12,9 @@ export const Event = ({ event }) => {
         <Typography>{event.date}</Typography>
       </Grid>
       <Grid container>
-        <Typography>{event.title}</Typography>
-        <Typography>{event.description}</Typography>
-        <Typography>{event.image}</Typography>
+        <Typography className={classes.eventInfo} >{event.title}</Typography>
+        <Typography className={classes.eventInfo} >{event.description}</Typography>
+        <Typography className={classes.eventInfo} >{event.image}</Typography>
       </Grid>
     </Grid>
   )
