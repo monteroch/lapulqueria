@@ -15,5 +15,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   eventInfo: {
     width: "100%"
+  },
+  month: {
+    width: "100%",
+    textAlign: 'center',
+    fontSize: '30px'
+  },
+  day: {
+    width: "100%",
+    textAlign: 'center',
+    fontSize: '80px'
   }
 }));

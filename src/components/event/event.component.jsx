@@ -9,7 +9,8 @@ export const Event = ({ event }) => {
   return(
     <Grid className={classes.eventItemContainer} container direction="row" xs={2}>
       <Grid container className={classes.dateContainer}>
-        <Typography>{event.date}</Typography>
+        <Typography className={classes.month} >{event.date.split("/")[0].substr(0, 3)}</Typography>
+        <Typography className={classes.day} >{event.date.split("/")[1]}</Typography>
       </Grid>
       <Grid container>
         <Typography className={classes.eventInfo} >{event.title}</Typography>
