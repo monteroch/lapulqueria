@@ -108,7 +108,7 @@ export default function Header(){
             <AppBar className={classes.headerContainer}>
             { matchesSM ? drawer : tabs }                
             </AppBar>
-            <div className={classes.appBarMargin}/>
+            {/* <div className={classes.appBarMargin}/> */}
         </React.Fragment>
     )
 

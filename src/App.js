@@ -5,10 +5,11 @@ import { Header, Blog, Boutique, Contact, Events, Home } from './components/inde
 import Pulques from './components/pulques/pulques.component';
  
 import theme from './theme';
+import './App.css';
 
 function App() {
   return (
-    <div style={{height: "100vh"}}>
+    <div className="mainContainer">
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Header/>
