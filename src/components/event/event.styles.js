@@ -14,7 +14,8 @@ export const useStyles = makeStyles((theme) => ({
     alignContent: 'center'
   },
   eventInfo: {
-    width: "100%"
+    width: "100%",
+    padding: "5%"
   },
   month: {
     width: "100%",
@@ -25,5 +26,13 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     textAlign: 'center',
     fontSize: '80px'
+  },
+  eventTitle: {
+    fontSize: "20px",
+    fontWeight: 'bold',
+    marginBottom: "2%"
+  },
+  eventDescription: {
+    fontSize: "14px"
   }
 }));
