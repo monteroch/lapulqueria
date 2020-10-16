@@ -5,6 +5,7 @@ export default makeStyles((theme) => ({
         border: "5px solid",
         height: "100%",
         boxSizing: "border-box",
-        padding: "5%"
+        padding: "5%",
+        paddingTop: "7.5%"
     }
 }));

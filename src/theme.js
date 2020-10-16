@@ -28,5 +28,6 @@ export default createMuiTheme({
                 }
             }
         },
-    }
+    },
+    spacing: 10
 });

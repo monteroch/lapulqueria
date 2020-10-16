@@ -18,7 +18,9 @@ export default function Events(){
     return(
         <Grid container 
             direction='row' 
-            className={classes.eventsContainer}>
+            className={classes.eventsContainer}
+            spacing={10}
+            >
            {
                EventsList.map(event => (
                    <Event event={event}/>

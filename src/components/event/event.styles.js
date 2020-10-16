@@ -5,7 +5,6 @@ export const useStyles = makeStyles((theme) => ({
     borderColor: "#000000",
     border: "2px solid",
     height: "50%",
-    margin: "10px"
   },
   dateContainer: {
     backgroundColor: "rgb(0, 0, 0)",
