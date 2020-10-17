@@ -12,11 +12,14 @@ export default makeStyles((theme) => ({
     contactForm: {
         height: '50vh',
         alignContent: 'center',
-        justifyContent: "center"
+        justifyContent: "center",
     },
     map: {
         height: '50vh',
         alignContent: 'center',
-        justifyContent: "center"
+        justifyContent: "center",
+    },
+    mapImage: {
+        height: "100%"
     }
 }));
