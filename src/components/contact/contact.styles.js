@@ -1,21 +1,22 @@
 import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
-    underConstruction: {
-        width:"50em",
-        
-        [theme.breakpoints.down("sm")]:{
-            width:"35em"
-        },
-        [theme.breakpoints.down("xs")]:{
-            width:"22em"
-        }
+    contactContaine: {
+        marginTop: "50px"
     },
-    underConstructionText: {
-        fontSize: "3em",
-        textAlign: 'center',
-
-        [theme.breakpoints.down("sm")]:{
-            fontSize: "2em"
-        },
+    getInTouch: {
+        height: '50vh',
+        alignContent: 'center',
+        justifyContent: "center",
+        backgroundColor: "rgb(0, 79, 80)"
+    },
+    contactForm: {
+        height: '50vh',
+        alignContent: 'center',
+        justifyContent: "center"
+    },
+    map: {
+        height: '50vh',
+        alignContent: 'center',
+        justifyContent: "center"
     }
 }));

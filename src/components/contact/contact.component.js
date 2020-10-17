@@ -13,9 +13,10 @@ export default function Contact(){
     const classes = useStyles();
 
     return(
-        <Grid container direction='column' alignItems="center">
-            <img src={doge} alt="muscle-doge" className={classes.underConstruction}/>
-            <Typography className={classes.underConstructionText}>The contact's page is under construction</Typography>
+        <Grid container direction='row' className={classes.contactContaine}>
+            <Grid item container className={classes.getInTouch}><Typography>Get in Touch</Typography></Grid>
+            <Grid item container className={classes.contactForm}><Typography>Message Us</Typography></Grid>
+            <Grid item container className={classes.map}><Typography>Map</Typography></Grid>
         </Grid>
     )
 
