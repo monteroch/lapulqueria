@@ -20,6 +20,22 @@ export default makeStyles((theme) => ({
         justifyContent: "center",
     },
     mapImage: {
-        height: "100%"
+        height: "100%",
+        width: "100%"
+    },
+    gitTitleContainer: {
+        height: "15%",
+        justifyContent: "center",
+        alignContent: "center"
+    },
+    gitTitle: {
+        color: "#ffffff",
+        fontSize: "20px",
+        fontWeight: "bold"
+    },
+    gitContent: {
+        height: "85%",
+        alignContent: "center",
+        justifyContent: "center"
     }
 }));

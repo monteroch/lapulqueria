@@ -14,7 +14,20 @@ export default function Contact(){
 
     return(
         <Grid container direction='row' className={classes.contactContaine}>
-            <Grid item container className={classes.getInTouch}><Typography>Get in Touch</Typography></Grid>
+            <Grid item container direction="column" className={classes.getInTouch}>
+                <Grid item container className={classes.gitTitleContainer}><Typography className={classes.gitTitle}>GET IN TOUCH</Typography></Grid>
+                <Grid item container className={classes.gitContent}>
+                    <Grid item>
+                       <Typography>Element 1</Typography> 
+                    </Grid>
+                    <Grid item>
+                        <Typography>Element 2</Typography>
+                    </Grid>
+                    <Grid item>
+                        <Typography>Element 3</Typography>
+                    </Grid>
+                </Grid>
+            </Grid>
             <Grid item container className={classes.contactForm}><Typography>Message Us</Typography></Grid>
             <Grid item container className={classes.map}>
                 <img src={map} alt="map" className={classes.mapImage}/>
