@@ -37,5 +37,17 @@ export default makeStyles((theme) => ({
         height: "85%",
         alignContent: "center",
         justifyContent: "center"
+    },
+    getInTouchItemContainer: {
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center"
+    },
+    itemIcon: {
+        color: "#ffffff",
+        fontSize: "45px",
+        borderRadius: "30px",
+        backgroundColor: "rgba(255, 255, 255, 0.4)",
+        padding: "10px"
     }
 }));

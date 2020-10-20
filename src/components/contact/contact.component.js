@@ -1,6 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import CallIcon from '@material-ui/icons/Call';
+import SmsIcon from '@material-ui/icons/Sms';
 
 //Images
 import map from '../../assets/images/map.png';
@@ -17,14 +20,17 @@ export default function Contact(){
             <Grid item container direction="column" className={classes.getInTouch}>
                 <Grid item container className={classes.gitTitleContainer}><Typography className={classes.gitTitle}>GET IN TOUCH</Typography></Grid>
                 <Grid item container className={classes.gitContent}>
-                    <Grid item>
-                       <Typography>Element 1</Typography> 
+                    <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
+                       <LocationOnIcon className={classes.itemIcon}/>
+                       <Typography>ADDRESS</Typography>
                     </Grid>
-                    <Grid item>
-                        <Typography>Element 2</Typography>
+                    <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
+                        <CallIcon className={classes.itemIcon}/>
+                        <Typography>PHONE</Typography>
                     </Grid>
-                    <Grid item>
-                        <Typography>Element 3</Typography>
+                    <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
+                        <SmsIcon className={classes.itemIcon}/>
+                        <Typography>EMAIL</Typography>
                     </Grid>
                 </Grid>
             </Grid>
