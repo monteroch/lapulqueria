@@ -49,5 +49,16 @@ export default makeStyles((theme) => ({
         borderRadius: "30px",
         backgroundColor: "rgba(255, 255, 255, 0.4)",
         padding: "10px"
+    },
+    itemTitle: {
+        fontWeight: "bold",
+        marginTop: "10px",
+        marginBottom: "10px",
+        color: "#ffffff"
+    },
+    address: {
+        color: "#ffffff",
+        paddingLeft: "30%",
+        paddingRight: "30%"
     }
 }));

@@ -22,15 +22,18 @@ export default function Contact(){
                 <Grid item container className={classes.gitContent}>
                     <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
                        <LocationOnIcon className={classes.itemIcon}/>
-                       <Typography>ADDRESS</Typography>
+                       <Typography className={classes.itemTitle}>ADDRESS</Typography>
+                       <Typography className={classes.address}>Av. Paseo de la Reforma 408, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX</Typography>
                     </Grid>
                     <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
                         <CallIcon className={classes.itemIcon}/>
-                        <Typography>PHONE</Typography>
+                        <Typography className={classes.itemTitle}>PHONE</Typography>
+                        <Typography className={classes.address}>55 5201 4578</Typography>
                     </Grid>
                     <Grid item xs={12} sm={4} className={classes.getInTouchItemContainer}>
                         <SmsIcon className={classes.itemIcon}/>
-                        <Typography>EMAIL</Typography>
+                        <Typography className={classes.itemTitle}>EMAIL</Typography>
+                        <Typography className={classes.address}>careers@lapulqueria.com</Typography>
                     </Grid>
                 </Grid>
             </Grid>
