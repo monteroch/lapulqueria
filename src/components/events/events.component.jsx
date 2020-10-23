@@ -19,13 +19,11 @@ export default function Events(){
         <Grid container 
             direction='row' 
             className={classes.eventsContainer}
-            spacing={10}
+            spacing={2}
             >
-           {
-               EventsList.map(event => (
-                   <Event event={event}/>
-               ))
-           }
+            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
+            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
+            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
         </Grid>
     )
 
