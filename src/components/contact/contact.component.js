@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CallIcon from '@material-ui/icons/Call';
 import SmsIcon from '@material-ui/icons/Sms';
+import TextField from '@material-ui/core/TextField';
 
 //Images
 import map from '../../assets/images/map.png';
@@ -37,7 +38,13 @@ export default function Contact(){
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container className={classes.contactForm}><Typography>Message Us</Typography></Grid>
+            <Grid item container className={classes.contactForm}>
+                <Typography>Message Us</Typography>
+                <TextField label="Fullname" variant="outlined"/>
+                <TextField label="Email" variant="outlined"/>
+                <TextField label="Email" variant="outlined"/>
+                <TextField label="Comments" variant="outlined" multiline rows={4}/>
+            </Grid>
             <Grid item container className={classes.map}>
                 <img src={map} alt="map" className={classes.mapImage}/>
             </Grid>
