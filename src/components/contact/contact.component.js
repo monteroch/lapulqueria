@@ -39,11 +39,16 @@ export default function Contact(){
                 </Grid>
             </Grid>
             <Grid item container className={classes.contactForm}>
-                <Typography>Message Us</Typography>
-                <TextField label="Fullname" variant="outlined"/>
-                <TextField label="Email" variant="outlined"/>
-                <TextField label="Email" variant="outlined"/>
-                <TextField label="Comments" variant="outlined" multiline rows={4}/>
+            <Typography>Message Us</Typography>
+                <Grid item container>
+                    <Typography>Send us a message</Typography>
+                </Grid>
+                <Grid item container>
+                    <TextField label="Fullname" variant="outlined"/>
+                    <TextField label="Email" variant="outlined"/>
+                    <TextField label="Email" variant="outlined"/>
+                    <TextField label="Comments" variant="outlined" multiline rows={4}/>
+                </Grid>
             </Grid>
             <Grid item container className={classes.map}>
                 <img src={map} alt="map" className={classes.mapImage}/>

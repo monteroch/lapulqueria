@@ -21,9 +21,9 @@ export default function Events(){
             className={classes.eventsContainer}
             spacing={2}
             >
-            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
-            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
-            <Grid item className={classes.itemGrid} xs={3}>A</Grid>
+                <Grid item className={classes.itemGrid} xs={3}>A</Grid>
+                <Grid item className={classes.itemGrid} xs={3}>A</Grid>
+                <Grid item className={classes.itemGrid} xs={3}>A</Grid>
         </Grid>
     )
 
